@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("SF Pro Display"),
+    url("../fonts/SFPro.woff2") format('woff2'),
+    url("../fonts/SFPro.woff") format('woff'),
+    url("../fonts/SFPro.ttf") format('ttf');
+    }
+
 *,
 *::before,
 *::after {
@@ -5,7 +16,7 @@
 }
 
 body {
-    font-family:  "Sans Serif";
+    font-family: "SF Pro Display", Arial, sans-serif;
     font-size: ;
     line-height: ;
     background-color: ;
