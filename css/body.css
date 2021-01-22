@@ -1,0 +1,8 @@
+@media (max-width: 639.98px) {
+  .main__picture-item {
+    width: 508px;
+    height: 335px;
+    object-fit: cover;
+    background-color: #cccccc;
+  }
+}
