@@ -1,0 +1,93 @@
+.main-about {
+  min-height: 1400px;
+  max-width: 490px;
+  margin: 0 auto;
+}
+
+.about-section {}
+
+
+.contact-container {}
+
+.contact-section {}
+
+.contact-heading {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.contact-list {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.contact-item {}
+.contact-item__heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.contact-item__text,
+.contact-item__text:visited,
+.contact-item__text:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+.contact-form {}
+.contact-form__label {}
+.contact-form__input {}
+.contact-form__button {}
+
+
+/* @media (max-width: 639.98px) {} */
+/* @media (min-width: 640px) and (max-width: 767.98px) {} */
+/* @media (min-width: 768px) and (max-width: 1023.98px) {} */
+/* @media (min-width: 1024px) {} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

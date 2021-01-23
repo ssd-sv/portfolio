@@ -1,7 +1,7 @@
 @font-face {
     font-family: "SF Pro Display";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-display: swap;
     src: local("SF Pro Display"),
     url("../fonts/SFPro.woff2") format('woff2'),
@@ -9,6 +9,16 @@
     url("../fonts/SFPro.ttf") format('ttf');
     }
 
+@font-face {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("SF Pro Display"),
+    url("../fonts/SFProDisplay-Regular.woff2") format('woff2'),
+    url("../fonts/SFProDisplay-Regular.woff") format('woff'),
+    url("../fonts/SFProDisplay-Regular.ttf") format('ttf');
+    }
 /* All site */
 *,
 *::before,
@@ -19,6 +29,7 @@
 body {
     font-family: "SF Pro Display", Arial, sans-serif;
     line-height: 1.2;
+    font-weight: 300;
     background-color: #121212;
     color: #ffffff;
 }
@@ -116,7 +127,7 @@ body {
       width: 508px;
       padding-top: 15px;
       padding-bottom: 15px;
-      /* display: none; */
+      display: none;
     }
   
     .nav__item-menu--last {
