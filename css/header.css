@@ -14,7 +14,10 @@
 
 
 /* Author */
-
+.author {
+  font-size: 34px;
+  text-transform: uppercase;
+}
 
 
 
@@ -50,6 +53,9 @@
 .nav__item {
   display: flex;
   list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  font-size: 30px;
 }
 
 .nav__item-menu,
@@ -61,7 +67,8 @@
 
 
 .nav__item-menu--active {
-  text-decoration: underline;
+  /* text-decoration: underline;*/ /*с таким подчеркиванием не похоже на то, что в макете */
+  border-bottom: 1px solid #ffffff;
 }
 
 
@@ -75,7 +82,7 @@
 
 
 
-/* small */
+/* Small */
 @media (max-width: 639.98px) {
   
   .header {
@@ -89,12 +96,13 @@
     align-items: center;
     text-align: center;
 
-    text-transform: uppercase;
-    font-size: 36px;
     position: absolute;
     top: 70px;
-    left: -20px;
+    left: 0;
     width: 100%;
+
+    text-transform: uppercase;
+    font-size: 36px;
   }
 
 
@@ -113,6 +121,7 @@
 
   .nav__item-menu--active {
     text-decoration: none;
+    border-bottom: none;
   }
 
   .nav__mobile-menu {
@@ -123,11 +132,6 @@
     border: 0;
     background-color: transparent;
     background-image: url(../ico/menu.svg);
-  }
-
-  .author {
-      font-size: 34px;
-      text-transform: uppercase;
   }
 
 }
@@ -141,9 +145,40 @@
 
 
 
-/* middle */
+/* Middle */
 @media (min-width: 640px) and (max-width: 767.98px) {
     .header {
         height: 175px;
+        max-width: 693px;
     }
+
+    .nav__item {
+      font-size: 20px;
+    }
+
+    .nav__item-menu {
+      margin-left: 23px;
+    }
+}
+
+
+/* Large */
+@media (min-width: 768px) {
+  .header {
+    max-width: 936px;
+  }
+
+  .social-network {
+    margin-right: -100px;
+  }
+
+  .nav__item-menu {
+    margin-left: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    max-width: 1114px;
+  }
 }

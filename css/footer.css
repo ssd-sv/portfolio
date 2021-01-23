@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  height: 150px;
+}
+
+.copyright {
+  margin: auto;
+}
