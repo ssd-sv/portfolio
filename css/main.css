@@ -115,10 +115,10 @@ body {
   .nav__item-menu--active,
   .nav__item-menu--active:hover,
   .nav__item-menu--active:active {
-    /*text-decoration: underline;*/ /*с таким подчеркиванием не похоже на то, что в макете */
-    border-bottom: 1px solid #ffffff;  /* это подчеркивание по макету */
+    border-bottom: 1px solid #ffffff;
   }
 
+  /* XS */
 
   /* Small */
 @media (max-width: 710.98px) {
@@ -189,6 +189,11 @@ body {
     }
   }
 
+  @media (max-width: 514.98px) {
+    .nav__item-menu {
+      width: 320px;
+  }
+
   /* Middle */
 @media (min-width: 711px) and (max-width: 952.98px) {
     .header {
@@ -247,9 +252,13 @@ body {
   margin: 0 auto;
 }
 
-.picture-item {
+
+.picture__item {
   object-fit: cover;
   background-color: #cccccc;
+  width: 542px;
+  height: 358px;
+  margin-top: 22px;
 }
 
 /* XS */
@@ -260,10 +269,17 @@ body {
     margin-top: 20px;
   }
 
-  .picture-item--invisible {
+  .picture__item--invisible {
     display: none;
   }
 
+}
+
+/* XS */
+@media (max-width: 514.98px) {
+  .picture-item--invisible {
+    display: none;
+  }
 }
 
 /* Small */

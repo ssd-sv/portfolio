@@ -154,10 +154,6 @@
   visibility: hidden;
 }
 
-.contact-form__button:hover~.contact-form__text-after-submit {
-  visibility: visible;
-}
-
 
   /* Small */
 @media (max-width: 710.98px) {
