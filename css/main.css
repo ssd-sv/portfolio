@@ -57,6 +57,13 @@ body {
     width: 195px;
   }
 
+.author__a,
+.author__a:hover,
+.author__a:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 /* XSmall */
 @media (max-width: 370px) {
 .author {
@@ -101,10 +108,15 @@ body {
     color: #ffffff;
   }
   
+  .nav__item-menu:hover {
+    border-bottom: 1px solid #ffffff;
+  }
   
-  .nav__item-menu--active {
-    text-decoration: underline; /*с таким подчеркиванием не похоже на то, что в макете */
-    /* border-bottom: 1px solid #ffffff; */  /* это подчеркивание по макету */
+  .nav__item-menu--active,
+  .nav__item-menu--active:hover,
+  .nav__item-menu--active:active {
+    /*text-decoration: underline;*/ /*с таким подчеркиванием не похоже на то, что в макете */
+    border-bottom: 1px solid #ffffff;  /* это подчеркивание по макету */
   }
 
 
@@ -117,7 +129,7 @@ body {
     }
   
     .nav__item {
-      display: flex;
+      display: none;
       flex-direction: column;
       align-items: center;
       text-align: center;
@@ -133,12 +145,15 @@ body {
   
   
     .nav__item-menu {
-      display: block;
       background-color: #121212;
       width: 508px;
       padding-top: 15px;
       padding-bottom: 15px;
-      display: none;
+      display: block;
+    }
+
+    .nav__item-menu:hover {
+      border-bottom: none;
     }
   
     .nav__item-menu--last {
@@ -151,7 +166,7 @@ body {
     }
   
     .nav__mobile-menu {
-      display: block;
+      display: inline-block;
       width: 30px;
       height: 30px;
       appearance: none;
@@ -159,7 +174,19 @@ body {
       background-color: transparent;
       background-image: url(../ico/menu.svg);
     }
-  
+
+    .nav__mobile-menu:checked {
+      background-image: url(../ico/menu_close.svg);
+      outline: none;
+    }
+
+    .nav__mobile-menu:focus {
+      outline: none;
+    }
+
+    .nav__mobile-menu:checked~.nav__item {
+      display: flex;
+    }
   }
 
   /* Middle */
@@ -179,7 +206,7 @@ body {
 }
 
 
-/* L & XL */
+  /* Large*/
 @media (min-width: 953px) and (max-width: 1129.98px) {
     .header {
       max-width: 936px;
@@ -194,6 +221,7 @@ body {
     }
   }
   
+  /* XL */
   @media (min-width: 1130px) {
     .header {
       max-width: 1114px;
