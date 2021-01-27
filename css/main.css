@@ -193,6 +193,7 @@ body {
     .nav__item-menu {
       width: 320px;
   }
+}
 
   /* Middle */
 @media (min-width: 711px) and (max-width: 952.98px) {

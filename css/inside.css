@@ -84,7 +84,7 @@
 }
 
 
-.contact-form {
+.form-section {
   width: 100%;
 }
 
@@ -148,10 +148,6 @@
   border: none;
   font-size: 18px;
   font-weight: 700;
-}
-
-.contact-form__text-after-submit {
-  visibility: hidden;
 }
 
 
