@@ -32,6 +32,9 @@ body {
     font-weight: 300;
     background-color: #121212;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 
@@ -191,9 +194,11 @@ body {
 
   @media (max-width: 514.98px) {
     .nav__item-menu {
-      width: 320px;
+      width: 100vw;
   }
 }
+
+
 
   /* Middle */
 @media (min-width: 711px) and (max-width: 952.98px) {
