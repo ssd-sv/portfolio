@@ -32,9 +32,6 @@ body {
     font-weight: 300;
     background-color: #121212;
     color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
 }
 
 
