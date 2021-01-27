@@ -87,24 +87,24 @@
     
     <section class="form-section">
       <h2 class="contact-heading contact-heading--invisible">Contact form</h2>
-        <form action="" name="Contact form" class="contact-form" autocomplete="off">
+        <form action="php/send.php" method="post"  name="Contact form" class="contact-form" autocomplete="off">
           <div>
             <p class="contact-form__label"><label for="name_input">Name *</label></p>
-            <input class="contact-form__input" type="text" id="name_input" required>
+            <input class="contact-form__input" type="text" name="name" id="name_input" required>
           </div>
 
           <div>
             <p class="contact-form__label"><label for="email_input">E-mail *</label></p>
-            <input class="contact-form__input" type="email" id="email_input" required>
+            <input class="contact-form__input-email" type="email" name="email" id="email_input" required>
           </div>
 
           <div>
             <p class="contact-form__label"><label for="message_input">Message *</label></p>
-            <textarea class="contact-form__textarea" id="message_input" required></textarea>
+            <textarea class="contact-form__textarea" name="message" id="message_input" required></textarea>
           </div>
 
           <button class="contact-form__button" type="submit">Submit</button>
-          <p class="contact-form__text-after-submit"><!--Thank you! I will contact you as soon as possible--></p>
+          <p class="contact-form__text-after-submit"></p>
         </form>
         
     </section>

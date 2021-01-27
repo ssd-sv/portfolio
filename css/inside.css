@@ -119,7 +119,8 @@
 }
 
 
-.contact-form__input {
+.contact-form__input,
+.contact-form__input-email {
   appearance: none;
   height: 40px;
   width: 100%;
