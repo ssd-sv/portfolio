@@ -99,6 +99,7 @@ body {
     margin-left: 0;
     padding-left: 0;
     font-size: 30px;
+    z-index: 1;
   }
   
   .nav__item-menu,
