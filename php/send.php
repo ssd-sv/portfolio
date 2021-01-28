@@ -1,16 +1,14 @@
 <?php
 
-// получение данных с элемента формы
-
+$recepient = "shsrdas@gmail.com";
+$siteName = "Сайт-портфолио";
 $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
+$inform = "Имя: $name \nE-mail: $email \nСообщение: $message";
+$pagetitle = "Сообщение с \"$siteName\"";
 
-
-
-
-// обрабатываем полученные данные
-
+// обработка данных
 $name = htmlspecialchars($name);
 $email = htmlspecialchars($email);
 $message = htmlspecialchars($message);
@@ -26,32 +24,7 @@ $email = trim($email);
 $message = trim($message);
 
 
-
-
-// отправка данных
-
-if (mail("kanva777@gmail.com",
-         "Новое письмо с сайта-портфолио",
-         "Имя: ".$login."\n".
-         "E-mail: ".$email."\n".
-         "Сообщение: ".$message."\n".)
-)  {
-  echo ('Your message has been sent successfully');
-}
-
-else {
-  echo ('There is an error, please check your data');
-}
-
-
-
-
-
-
-
-
-
-
-
+// отправка
+mail($recepient, $pagetitle, $inform, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");
 
 ?>

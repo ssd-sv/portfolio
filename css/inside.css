@@ -1,5 +1,7 @@
 .main-about {
   margin: 0 auto;
+  min-height: 100%;
+  padding-bottom: 150px;
 }
 
   /* Small */
@@ -184,7 +186,6 @@
     margin-top: 42px;
   }
 }
-
 
 
 

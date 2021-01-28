@@ -87,20 +87,20 @@
     
     <section class="form-section">
       <h2 class="contact-heading contact-heading--invisible">Contact form</h2>
-        <form action="php/send.php" method="post"  name="Contact form" class="contact-form" autocomplete="off">
+        <form id="contact-form" name="Contact form" class="contact-form" autocomplete="off">
           <div>
             <p class="contact-form__label"><label for="name_input">Name *</label></p>
-            <input class="contact-form__input" type="text" name="name" id="name_input" required>
+            <input class="contact-form__input" type="text" name="name" id="name_input">
           </div>
 
           <div>
             <p class="contact-form__label"><label for="email_input">E-mail *</label></p>
-            <input class="contact-form__input-email" type="email" name="email" id="email_input" required>
+            <input class="contact-form__input-email" type="email" name="email" id="email_input">
           </div>
 
           <div>
             <p class="contact-form__label"><label for="message_input">Message *</label></p>
-            <textarea class="contact-form__textarea" name="message" id="message_input" required></textarea>
+            <textarea class="contact-form__textarea" name="message" id="message_input"></textarea>
           </div>
 
           <button class="contact-form__button" type="submit">Submit</button>
@@ -135,7 +135,8 @@
     <div class="copyright">&copy;Igor Rogov</div>
   </footer>
 
-<script src="js/submit.js"></script>
-<script src="js/textarea.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/submit.js"></script>
+  <script src="js/textarea.js"></script>
 </body>
 </html>
