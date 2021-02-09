@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 /* All site */
 *,
@@ -37,7 +37,7 @@ body {
   font-size: 34px;
   text-transform: uppercase;
   display: block;
-  width: 195px;
+  width: 230px;
 }
 
 .author__a,
